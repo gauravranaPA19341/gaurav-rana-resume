@@ -1,130 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaurav Rana | Portfolio & Resume</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+:root {
+  --bg-color: #0b0f19;
+  --card-bg: #111827;
+  --accent-color: #3b82f6;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --border-color: #1f2937;
+}
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <a href="#top" class="logo">GR<span>.</span></a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <a href="Gaurav_Rana_Resume.pdf" class="btn-download" download>Download Resume</a>
-  </nav>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
 
-  <!-- Hero Section -->
-  <section id="top" class="hero">
-    <div class="status-badge">
-      <span class="dot"></span> Open to New Opportunities
-    </div>
-    <h1>Hi, I'm <span>Gaurav Rana</span></h1>
-    <p class="tagline">
-      Experienced professional specializing in enterprise operations, digital transformation, and program delivery. 
-      Proven track record in driving scalable solutions and cross-functional leadership.
-    </p>
-    <div class="hero-cta">
-      <a href="#contact" class="btn-primary">Let's talk →</a>
-      <a href="https://www.linkedin.com/in/gauravranag/" target="_blank" class="btn-secondary">LinkedIn</a>
-      <a href="mailto:your-email@example.com" class="btn-secondary">Email me</a>
-    </div>
-  </section>
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 0 10%;
+}
 
-  <!-- Key Metrics Banner -->
-  <section class="metrics-banner">
-    <div class="metric-card">
-      <div class="metric-number">10+</div>
-      <div class="metric-label">Years of Professional Experience</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-number">100%</div>
-      <div class="metric-label">Cross-functional Delivery Rate</div>
-    </div>
-    <div class="metric-card">
-      <div class="metric-number">Enterprise</div>
-      <div class="metric-label">Platform Modernization & Agile Leadership</div>
-    </div>
-  </section>
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="section-header">
-      <span>01 — About</span>
-      <h2>Professional Overview</h2>
-    </div>
-    <div class="about-content">
-      <p>
-        I specialize in connecting business strategy with scalable execution. With extensive background across leadership roles, I drive alignment between business units, engineering teams, and key stakeholders to deliver high-impact results.
-      </p>
-    </div>
-  </section>
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
 
-  <!-- Experience Timeline -->
-  <section id="experience" class="section">
-    <div class="section-header">
-      <span>02 — Experience</span>
-      <h2>Career History</h2>
-    </div>
-    <div class="timeline">
-      <!-- Experience Item -->
-      <article class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="job-header">
-            <h3>Senior Program Lead / Manager</h3>
-            <span class="company">Enterprise Solutions</span>
-            <span class="date">2021 — Present</span>
-          </div>
-          <ul>
-            <li>Led end-to-end strategic initiatives across multi-disciplinary delivery teams.</li>
-            <li>Optimized core business workflows using modern agile methodologies and automation toolkits.</li>
-            <li>Managed stakeholder engagements and alignment across product lifecycle transitions.</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
+.logo span { color: var(--accent-color); }
 
-  <!-- Skills & Certifications -->
-  <section id="skills" class="section">
-    <div class="section-header">
-      <span>03 — Skills</span>
-      <h2>Toolkit & Capabilities</h2>
-    </div>
-    <div class="skills-grid">
-      <span class="skill-tag">Program Management</span>
-      <span class="skill-tag">Agile & Scrum</span>
-      <span class="skill-tag">Cross-functional Leadership</span>
-      <span class="skill-tag">Product Strategy</span>
-      <span class="skill-tag">Business Analysis</span>
-      <span class="skill-tag">Stakeholder Engagement</span>
-    </div>
-  </section>
+.nav-links a {
+  color: var(--text-muted);
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="section-header">
-      <span>04 — Contact</span>
-      <h2>Get In Touch</h2>
-    </div>
-    <p>Feel free to reach out for leadership opportunities, consulting, or general networking.</p>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/gauravranag/" target="_blank">Connect on LinkedIn</a>
-    </div>
-  </section>
+.nav-links a:hover { color: #fff; }
 
-  <footer>
-    <p>© Gaurav Rana. Hosted on GitHub Pages.</p>
-  </footer>
+.btn-download {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
 
-</body>
-</html>
+/* Hero Section */
+.hero {
+  padding: 80px 0 60px 0;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-color);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+h1 span { color: var(--accent-color); }
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.hero-cta a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.btn-secondary {
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+/* Metrics Banner */
+.metrics-banner {
+  display: flex;
+  justify-content: space-between;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.metric-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Sections & Timeline */
+.section { margin-bottom: 80px; }
+
+.section-header span {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+.job-header { margin-bottom: 10px; }
+.job-header .date { display: block; font-size: 0.85rem; color: var(--text-muted); }
+.job-header .company { font-weight: 600; color: var(--accent-color); }
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+}
