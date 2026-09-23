@@ -6,10 +6,14 @@
   <title>Gaurav Rana - Senior Digital Product Leader & Technical Solutions Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
+
+  <!-- Ambient Glow Effects -->
+  <div class="bg-glow top-left" aria-hidden="true"></div>
+  <div class="bg-glow bottom-right" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <nav class="navbar">
@@ -19,43 +23,65 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
       <div class="nav-cta">
-        <a href="mailto:gaurav.rana@example.com" class="btn btn-primary">Get in Touch</a>
+        <a href="assets/Gaurav_Rana_Resume.pdf" class="btn btn-outline-nav" download>
+          Download Résumé
+        </a>
       </div>
     </div>
   </nav>
 
   <main>
     <!-- Hero Section -->
-    <section id="top" class="hero-section">
-      <div class="hero-content">
-        <div class="status-badge">
-          <span class="status-dot"></span>
-          Open to Senior Digital Product Leadership & Solutions Architecture Roles
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Open to Senior Digital Product Leadership &amp; Solutions Architecture Roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span>Gaurav Rana</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="typed-text">Senior Digital Product Leader &amp; Technical Solutions Architect</span><span class="type-cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            12+ years driving end-to-end <strong>Customer Experience (CX) transformation</strong>, <strong>AI orchestration</strong>, and enterprise digital operations across telecommunications, financial services, and corporate SaaS. Specialized in bridging business vision with scalable technical execution.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Let's talk <span>→</span></a>
+            <a href="https://www.linkedin.com/in/gauravranag" target="_blank" rel="noopener" class="btn btn-secondary">
+              LinkedIn
+            </a>
+            <a href="mailto:gaurav.rana@example.com" class="btn btn-secondary">Email Me</a>
+          </div>
+          <div class="hero-meta">
+            <span>📍 Exton, PA</span>
+            <span>·</span>
+            <span>SAFe POPM &amp; CSPO Certified</span>
+          </div>
         </div>
-        <h1 class="hero-title">
-          Hi, I'm <span>Gaurav Rana</span>
-        </h1>
-        <h2 class="hero-subtitle">
-          Senior Digital Product Leader & Technical Solutions Architect
-        </h2>
-        <p class="hero-description">
-          Driving end-to-end <strong>Customer Experience (CX) transformation</strong>, <strong>AI orchestration</strong>, and enterprise digital operations across telecommunications, financial services, and corporate SaaS. Specialized in bridging business vision with scalable technical execution.
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Let's talk <span>→</span></a>
-          <a href="https://www.linkedin.com/in/gauravranag" target="_blank" rel="noopener" class="btn btn-secondary">
-            LinkedIn
-          </a>
-          <a href="mailto:gaurav.rana@example.com" class="btn btn-secondary">Email Me</a>
+
+        <!-- Headshot Component -->
+        <div class="hero-media">
+          <div class="avatar-card">
+            <div class="avatar-frame">
+              <img src="assets/headshot.jpg" alt="Portrait of Gaurav Rana" width="380" height="380" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80'">
+            </div>
+            <div class="floating-pill">
+              <span class="pill-sparkle">✦</span> AI &amp; Product Architect
+            </div>
+          </div>
         </div>
-        <div class="hero-meta">
-          <span>📍 Exton, PA</span>
-          <span>·</span>
-          <span>SAFe POPM & CSPO Certified</span>
-        </div>
+      </div>
+
+      <div class="scroll-prompt">
+        <span>Scroll</span>
+        <div class="mouse-icon"><div class="mouse-wheel"></div></div>
       </div>
     </section>
 
@@ -64,19 +90,19 @@
       <div class="stats-container">
         <div class="stat-item">
           <div class="stat-number">12+</div>
-          <div class="stat-label">Years of Product & Architectural Leadership</div>
+          <div class="stat-label">Years of Product &amp; Architectural Leadership</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">CX & AI</div>
+          <div class="stat-number">CX &amp; AI</div>
           <div class="stat-label">Enterprise Customer Journey Transformation</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">Telecom & Banking</div>
+          <div class="stat-number">Telecom &amp; Banking</div>
           <div class="stat-label">Scalable Multi-Tenant Platforms</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">SAFe / CSPO</div>
-          <div class="stat-label">Agile & ML Orchestration Frameworks</div>
+          <div class="stat-label">Agile &amp; ML Orchestration Frameworks</div>
         </div>
       </div>
     </section>
@@ -85,7 +111,7 @@
     <section id="about" class="section">
       <div class="section-header">
         <span class="section-tag">01 — About</span>
-        <h2>Architecting intelligent products & enterprise digital journeys</h2>
+        <h2>Architecting intelligent products &amp; enterprise digital journeys</h2>
       </div>
       <div class="about-grid">
         <div class="about-text">
@@ -102,7 +128,7 @@
         <div class="about-card">
           <div class="card-box">
             <h3>Specialization</h3>
-            <p>Digital Product Management & AI Orchestration</p>
+            <p>Digital Product Management &amp; AI Orchestration</p>
             <span class="badge">Active Leadership</span>
           </div>
           <div class="card-box">
@@ -133,12 +159,12 @@
       <div class="timeline">
 
         <article class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3>Senior Digital Product Leader & Solutions Architect</h3>
-                <div class="company">Enterprise Digital & Telecom Operations</div>
+                <h3>Senior Digital Product Leader &amp; Solutions Architect</h3>
+                <div class="company">Enterprise Digital &amp; Telecom Operations</div>
               </div>
               <div class="timeline-date">Recent</div>
             </div>
@@ -151,7 +177,7 @@
         </article>
 
         <article class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
@@ -169,12 +195,12 @@
         </article>
 
         <article class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3>Senior Product Manager & Business Analyst</h3>
-                <div class="company">Financial Services & Banking Solutions</div>
+                <h3>Senior Product Manager &amp; Business Analyst</h3>
+                <div class="company">Financial Services &amp; Banking Solutions</div>
               </div>
               <div class="timeline-date">Fintech Transformation</div>
             </div>
@@ -192,25 +218,25 @@
     <section id="skills" class="section">
       <div class="section-header">
         <span class="section-tag">03 — Skills</span>
-        <h2>Technical & Product Toolkit</h2>
+        <h2>Technical &amp; Product Toolkit</h2>
       </div>
 
       <div class="skills-grid">
         <div class="skill-category">
-          <h3>Product Strategy & Leadership</h3>
+          <h3>Product Strategy &amp; Leadership</h3>
           <div class="skill-tags">
             <span>Digital Transformation</span>
             <span>Product Strategy</span>
             <span>Roadmap Design</span>
             <span>Voice of Customer (VoC)</span>
-            <span>A/B Testing & Optimization</span>
+            <span>A/B Testing &amp; Optimization</span>
             <span>CX Journey Mapping</span>
             <span>Stakeholder Alignment</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3>AI & Emerging Tech</h3>
+          <h3>AI &amp; Emerging Tech</h3>
           <div class="skill-tags">
             <span>AI/ML Orchestration</span>
             <span>Agentic AI Workflows</span>
@@ -221,7 +247,7 @@
         </div>
 
         <div class="skill-category">
-          <h3>Agile Frameworks & Management</h3>
+          <h3>Agile Frameworks &amp; Management</h3>
           <div class="skill-tags">
             <span>SAFe POPM</span>
             <span>Certified Scrum Product Owner (CSPO)</span>
@@ -233,11 +259,11 @@
         </div>
 
         <div class="skill-category">
-          <h3>Technical Architecture & Tools</h3>
+          <h3>Technical Architecture &amp; Tools</h3>
           <div class="skill-tags">
             <span>API Integration</span>
             <span>System Architecture</span>
-            <span>JIRA & Confluence</span>
+            <span>JIRA &amp; Confluence</span>
             <span>SQL Data Analysis</span>
             <span>Azure DevOps</span>
             <span>Process Flow Mapping</span>
@@ -246,19 +272,67 @@
       </div>
 
       <div class="certifications-box">
-        <h3>Certifications & Industry Credentials</h3>
+        <h3>Certifications &amp; Industry Credentials</h3>
         <div class="cert-tags">
           <span>SAFe® 6 Product Owner / Product Manager (POPM)</span>
           <span>Certified Scrum Product Owner® (CSPO)</span>
-          <span>AI Orchestration & Product Strategy</span>
+          <span>AI Orchestration &amp; Product Strategy</span>
         </div>
       </div>
     </section>
 
-    <!-- 04 — Contact Section -->
+    <!-- 04 — Projects Section (New) -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-tag">04 — Projects</span>
+        <h2>What I'm Building &amp; Orchestrating</h2>
+        <p class="section-subtext">Hands-on architecture and AI projects highlighting orchestration, CX optimization, and modern product roadmaps.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-status live">
+            <span class="status-dot"></span> Live Prototype
+          </div>
+          <h3>Omnichannel CX Orchestration Engine</h3>
+          <p>Automated AI routing workflow designed to classify customer inquiries, synthesize contextual history across CRM touchpoints, and dispatch structured tasks to support teams.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Case Study</a>
+            <span>·</span>
+            <a href="#" target="_blank" rel="noopener">Architecture Spec</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-status in-progress">
+            <span class="status-dot"></span> In progress
+          </div>
+          <h3>Agentic AI Backlog Assistant</h3>
+          <p>Local LLM pipeline converting high-level business requirements and discovery notes into Gherkin user stories with automated edge-case validation.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Documentation</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-status in-progress">
+            <span class="status-dot"></span> In progress
+          </div>
+          <h3>VoC Sentiment Evaluation Framework</h3>
+          <p>Automated telemetry pipeline benchmarking customer feedback streams against active product backlogs to calculate real-time feature impact scores.</p>
+        </div>
+
+        <div class="project-card more-card">
+          <h3>More initiatives on the way</h3>
+          <p>Iterating on agent architectures and enterprise AI evaluation models. Follow along on <a href="https://www.linkedin.com/in/gauravranag" target="_blank" rel="noopener">LinkedIn</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — Contact Section -->
     <section id="contact" class="section contact-section">
       <div class="contact-card">
-        <span class="section-tag">04 — Contact</span>
+        <span class="section-tag">05 — Contact</span>
         <h2>Let's connect and build intelligent products.</h2>
         <p>Open to senior leadership roles in Digital Product Management, Solutions Architecture, and AI Transformation. Reach out via email or LinkedIn.</p>
         <div class="contact-links">
@@ -281,7 +355,7 @@
   <footer>
     <div class="footer-container">
       <span>© Gaurav Rana. All rights reserved.</span>
-      <span>Hosted via GitHub Pages</span>
+      <span>Built with intent, not a template.</span>
     </div>
   </footer>
 
